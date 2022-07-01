@@ -8,13 +8,15 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(post_params)
         if @post.save
-            redirect_to post
+            redirect_to posts_path
         else
             render 'new', status: :unprocessable_entity
         end
     end
 
-
+    def index
+        @posts = Post.all.order(created_at: :desc)
+    end
 
     private
 
