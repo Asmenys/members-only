@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '9c46b4d53540748c37b4075e399756ed248fe53ba2e5e028029a94f063662de7cf7f929aa3c0b23ae6e046f8e8848cdc310dca3d1e4cd0ee60f53c73bed0edbd'
+  # config.secret_key = '7a1837574514548676cb937a306637b6bd73eae284b31b632651230c84ad2d6f8153df2b99364e606dcd6a0e92947c4c8b6514ac5bcee823652605a6dd3b82bb'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,11 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
+<<<<<<< HEAD
   # config.pepper = '90d9ab7e43d698ca59f16a9562533f8c95cb2a7aae8daccb0d701e9b611fef25e6595ab32627d9e40f3bbb722604da284f5af9b50877963d08faf8e8fee5f85d'
+=======
+  # config.pepper = '4dcddecfa56cf956a0e60a1794d95a4c727af434be09a4407b332393abd822d083514634ebf49d21b8b2c5bb62abc44707e570a026f5c534ba68c611c2c7da15'
+>>>>>>> e65233b (Created a devise model for Users, created a model for Posts, configured both models, updated routes.rb to allow create, new and index methods for Posts, initialized Users controller, initialized and configured Posts controller)
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
